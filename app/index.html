@@ -7,7 +7,7 @@
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="container-fluid">
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -26,32 +26,34 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-  <div class="row">
-    <div class="span12">
+  
       <div class="well" ui-view></div>        
-    </div>
-  </div>
-  <div class="container-fluid">
-  <div class="row" style="height: 100px"></div>
-  <div class="row">
-  <div class="col-sm-10">
-    <blockquote>
-      <p>And now these three remain: faith, hope and love. But the greatest of these is love.</p>
-      <footer>Corinthians 13:13</footer>
-    </blockquote>
-  </div>
-  <div class="col-sm-2">
-    <img ng-src="img/leaf.png" height="100px">
-  </div>
-  </div>
-</div>
+  
+      <div class="row">
+        <div class="col-sm-10">
+          <blockquote>
+            <p>And now these three remain: faith, hope and love. But the greatest of these is love.</p>
+            <footer>Corinthians 13:13</footer>
+          </blockquote>
+        </div>
+        <div class="col-sm-2">
+          <img ng-src="img/leaf.png" height="100px">
+        </div>
+      </div>
+
   
   <!-- Angular -->
-  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.4/angular.js"></script>
+  <script src="bower_components/angular/angular.min.js"></script>
+  <script src="bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
+  <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
   <!-- UI-Router -->
-  <script src="//angular-ui.github.io/ui-router/release/angular-ui-router.js"></script>
+  <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
   <!-- App Script -->
   <script src="js/app.js"></script>
+
+  
 
 </body>
 
