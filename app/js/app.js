@@ -7,7 +7,7 @@ var myapp = angular.module('myapp', ["ui.router", "ui.bootstrap"]);
       
       
       // For any unmatched url, send to /route1
-      $urlRouterProvider.otherwise("/route1");
+      $urlRouterProvider.otherwise("/welcome");
       
       $stateProvider
         .state('route1', {
@@ -34,22 +34,33 @@ var myapp = angular.module('myapp', ["ui.router", "ui.bootstrap"]);
         })
         .state('welcome', {
           url: "/welcome",
-          templateUrl: "partials/welcome.html"
+          templateUrl: "partials/welcome.html",
+          css: "css/app.css"
         });
     });
 
 myapp.controller('CarouselDemoCtrl', function ($scope) {
   $scope.myInterval = 5000;
   var slides = $scope.slides = [];
-  $scope.addSlide = function() {
-    var newWidth = 600 + slides.length + 1;
-    slides.push({
-      image: 'http://placekitten.com/' + newWidth + '/300',
-      text: ['More','Extra','Lots of','Surplus'][slides.length % 4] + ' ' +
-        ['Cats', 'Kittys', 'Felines', 'Cutes'][slides.length % 4]
-    });
-  };
-  for (var i=0; i<4; i++) {
-    $scope.addSlide();
-  };
+  $scope.slides.push({
+    image: 'img/threesome.png',
+    text: 'threesome'
+  });
+  $scope.slides.push({
+    image: 'img/girls.png',
+    text: 'girls'
+  });
+  $scope.slides.push({
+    image: 'img/lineup.png',
+    text: 'lineup'
+  });
+  $scope.slides.push({
+    image: 'img/everyone.png',
+    text: 'everyone'
+  });
 });
+
+function Ctrl($scope)
+{
+    $scope.date = new Date();
+}

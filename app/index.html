@@ -1,46 +1,15 @@
 <!DOCTYPE html>
-<html ng-app="myapp">
-
+<html lang="en" ng-app="myapp">
 <head>
     <title>信.望.爱</title>
     <!-- Bootstrap CSS -->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
 </head>
-
-<body class="container-fluid">
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">信.望.爱</a>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li><a ui-sref="route1">關於教會</a></li>
-        <li><a ui-sref="route1">教會活動</a></li>
-        <li><a ui-sref="route2">教會相冊</a></li>
-        <li><a ui-sref="route2">聯繫教會</a></li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-
-  <div ui-view></div>        
-
-  <div class="row" style="padding-top: 120px;clear:both">
-    <div class="col-sm-10">
-      <blockquote>
-        <p>And now these three remain: faith, hope and love. But the greatest of these is love.</p>
-        <footer>Corinthians 13:13</footer>
-      </blockquote>
-    </div>
-    <div class="col-sm-2">
-      <img ng-src="img/leaf.png" height="100px">
-    </div>
-  </div>
-  
+<body>
+  <div ng-include src="'/partials/homepage/menu.html'"></div>
+  <div ui-view></div>
+  <div ng-include src="'/partials/homepage/footer.html'"></div>
   <!-- Angular -->
   <script src="bower_components/angular/angular.min.js"></script>
   <script src="bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
@@ -51,9 +20,5 @@
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
   <!-- App Script -->
   <script src="js/app.js"></script>
-
-  
-
 </body>
-
 </html>

@@ -1,15 +1,25 @@
-<div class="container-fluid">
-  <div class="row" style="height: 100px"></div>
-  <div class="row">
-	<div class="col-sm-10">
-		<blockquote>
-		  <p>And now these three remain: faith, hope and love. But the greatest of these is love.</p>
-		  <footer>Corinthians 13:13</footer>
-		</blockquote>
+<div class="container">
+	<div class="row">
+		<div ng-controller="CarouselDemoCtrl">
+		  <div class="col-md-12">
+		    <carousel interval="myInterval">
+		      <slide ng-repeat="slide in slides" active="slide.active">
+		        <img ng-src="{{slide.image}}" style="margin:auto;">
+		      </slide>
+		    </carousel>
+		  </div>
+		</div>
 	</div>
-	<div class="col-sm-2">
-		<img ng-src="img/leaf.png" height="100px">
-	</div>
-  </div>
-</div>
 
+	<div class="row">
+	  <div class="col-xs-6 col-md-4">
+	  	<div ng-include src="'/partials/homepage/services.html'"></div>
+	  </div>
+	  <div class="col-xs-6 col-md-4">
+	  	<div ng-include src="'/partials/homepage/news.html'"></div>
+	  </div>
+	  <div class="col-xs-6 col-md-4">
+	  	<div ng-include src="'/partials/homepage/calendar.html'"></div>
+	  </div>
+	</div>
+</div>
