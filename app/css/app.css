@@ -1,9 +1,12 @@
 .highlight {
   margin-top: 14px;
   margin-bottom: 14px;
-  background-color: #f7f7f9;
   border: 1px solid #e1e1e8;
   border-radius: 4px;
+}
+
+.background {
+  background-color: #f7f7f9;
 }
 
 .highlight img {
