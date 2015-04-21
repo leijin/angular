@@ -1,8 +1,8 @@
 <div class="container">
 	<div class="row">
-		<div ng-controller="CarouselDemoCtrl">
+		<div ng-controller="Carousel">
 		  <div class="col-md-12">
-		    <carousel interval="myInterval">
+		    <carousel interval="slideInterval">
 		      <slide ng-repeat="slide in slides" active="slide.active">
 		        <img ng-src="{{slide.image}}" style="margin:auto;">
 		      </slide>
