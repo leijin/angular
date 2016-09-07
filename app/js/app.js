@@ -33,20 +33,24 @@ myapp.controller('Carousel', function ($scope) {
   $scope.slideInterval = 5000;
   var slides = $scope.slides = [];
   $scope.slides.push({
-    image: 'img/threesome.png',
-    text: 'threesome'
+    image: 'img/worship.png',
+    text: 'worship'
+  });
+  $scope.slides.push({
+    image: 'img/choir.png',
+    text: 'choir'
+  });
+  $scope.slides.push({
+    image: 'img/smile.png',
+    text: 'smile'
   });
   $scope.slides.push({
     image: 'img/girls.png',
     text: 'girls'
   });
   $scope.slides.push({
-    image: 'img/lineup.png',
-    text: 'lineup'
-  });
-  $scope.slides.push({
-    image: 'img/everyone.png',
-    text: 'everyone'
+    image: 'img/bro.png',
+    text: 'bro'
   });
 });
 
