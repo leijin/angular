@@ -45,16 +45,12 @@ myapp.controller('Carousel', function ($scope) {
     text: 'smile'
   });
   $scope.slides.push({
-    image: 'img/girls.png',
-    text: 'girls'
-  });
-  $scope.slides.push({
     image: 'img/bro.png',
     text: 'bro'
   });
 });
 
-function Ctrl($scope)
-{
+myapp.controller('Ctrl', function ($scope) {
     $scope.date = new Date();
-}
+  }
+);
