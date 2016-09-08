@@ -41,6 +41,10 @@ myapp.controller('Carousel', function ($scope) {
     text: 'choir'
   });
   $scope.slides.push({
+    image: 'img/girls.png',
+    text: 'girls'
+  });
+  $scope.slides.push({
     image: 'img/smile.png',
     text: 'smile'
   });
