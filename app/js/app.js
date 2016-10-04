@@ -22,6 +22,10 @@ var myapp = angular.module('myapp', ["ui.router", "ui.bootstrap"]);
           url: "/belief",
           templateUrl: "partials/belief.html"
         })
+        .state('agenda', {
+          url: "/agenda",
+          templateUrl: "partials/agenda.html"
+        })
         .state('welcome', {
           url: "/welcome",
           templateUrl: "partials/welcome.html",
